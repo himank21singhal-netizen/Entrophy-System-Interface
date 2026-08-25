@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #d1d1d1;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: transparent;
+  transition: opacity 0.8s ease-in-out, color 1.5s ease, text-shadow 1.5s ease;
+  opacity: 0.2;
+}
+
+body:hover {
+  opacity: 1;
+}
+
+/* Transcendence Theme: Unlocked at Logic Level 10 */
+body.transcended {
+  color: #00f2ff !important;
+  text-shadow: 0 0 15px rgba(0, 242, 255, 0.6) !important;
+}
+
+body.transcended #glitch-line {
+  background-color: #00f2ff !important;
+  box-shadow: 0 0 20px #00f2ff !important;
+}
+
+body.transcended #summon-status, 
+body.transcended #open-logs {
+  color: #00f2ff !important;
+  border-color: #00f2ff !important;
+}
+
+#mantra-text {
+  font-size: 0.8rem;
+  opacity: 0.4;
+  margin-bottom: 20px;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#consumption-text {
+  font-size: 2rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  animation: breathe 5s ease-in-out infinite;
+  transition: all 0.5s ease;
+}
+
+.distracted {
+  color: #ff4d4d !important;
+  text-shadow: 0 0 15px rgba(255, 77, 77, 0.6) !important;
+  animation: warning-pulse 2s infinite !important;
+}
+
+@keyframes breathe {
+  0%, 100% { opacity: 0.7; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1); text-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
+}
+
+@keyframes warning-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+#summon-status {
+  background: transparent;
+  border: 1px solid #d1d1d1;
+  color: #d1d1d1;
+  padding: 8px 20px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  transition: all 0.4s ease;
+  opacity: 0.6;
+}
+
+#summon-status:hover {
+  opacity: 1;
+  background: rgba(209, 209, 209, 0.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.stat-row { font-size: 1.1rem; margin: 10px 0; letter-spacing: 2px; text-align: center; }
+
+#attribute-container {
+  border-top: 1px solid rgba(209, 209, 209, 0.3);
+  padding-top: 15px;
+  animation: breathe 5s ease-in-out infinite;
+}
+
+#glitch-line {
+  height: 2px; width: 0%; background-color: #d1d1d1; margin: 10px auto; transition: width 0.5s ease; box-shadow: 0 0 10px #d1d1d1;
+}
+
+#open-logs {
+  background: none; border: none; color: #d1d1d1; font-family: 'Courier New', monospace; cursor: pointer; font-size: 0.7rem; letter-spacing: 2px;
+}

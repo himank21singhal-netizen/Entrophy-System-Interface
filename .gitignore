@@ -1,0 +1,19 @@
+# Node dependencies
+node_modules/
+
+# Electron Forge / Build outputs
+out/
+dist/
+build/
+.webpack/
+
+# Environment files
+.env
+.env.local
+
+# Logs and IDE
+*.log
+npm-debug.log*
+.vscode/
+.DS_Store
+Thumbs.db
